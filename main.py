@@ -6,7 +6,7 @@ client = discord.Client()
 
 @client.event
 async def on_message(message):
-  if str(message.channel) == 'verify-section-2' and message.content == ';ping' and not message.author.bot:
+  if message.content == ';ping' and not message.author.bot:
     await message.channel.send(f'Pong! Heroku latency is {round(client.latency * 1000)}ms')
 @client.event
 async def on_message(message):
