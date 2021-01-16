@@ -14,7 +14,6 @@ async def on_message(message):
     modmail_channel = discord.utils.get(client.get_all_channels(), name="mod-mail")
 
     if message.author == client.user:
-        await message.channel.send("Thank you for contacting! Staff will reply you as fast as we can!")
         return
     if str(message.channel.type) == "private":
         if message.attachments != empty_array:
