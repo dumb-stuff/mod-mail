@@ -41,4 +41,4 @@ async def on_message(message):
 @client.event
 async def on_ready():
     await client.change_presence(status=discord.Status.idle, activity=discord.Game("Hey! You see my status right? So yeah. PLEASE INPUT YOUR DISCORD USER ID. OR MOD OR STAFF WILL CAN'T REPLY YOU!"))
-client.run("Nzk2MjE0NzQyOTg0NDI1NTA0.X_Uqww.xbAmjwoRCxDf_bQshATOYIymWFA")
+client.run(os.getenv("TOKEN"))
